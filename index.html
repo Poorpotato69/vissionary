@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Discord Embed Metadata -->
+    <title>Visionary QA Video</title>
     <meta property="og:title" content="Visionary QA - Bot Order by Kiwiplayzz_">
-    <meta property="og:description" content="Official Quality Assurance testing session with bot order by Kiwiplayzz_">
+    <meta property="og:description" content="Quality Assurance testing session">
     <meta property="og:image" content="https://img.youtube.com/vi/Qh10fVoNrPw/maxresdefault.jpg">
     <meta property="og:url" content="https://vissionary.poorpotato.fun">
     <meta property="og:type" content="video.other">
@@ -14,144 +13,33 @@
     <meta property="og:video:type" content="text/html">
     <meta property="og:video:width" content="1280">
     <meta property="og:video:height" content="720">
-    
-    <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="player">
-    <meta name="twitter:site" content="@YourTwitterHandle">
-    <meta name="twitter:title" content="Visionary QA Session">
-    <meta name="twitter:description" content="Quality Assurance testing with bot order by Kiwiplayzz_">
-    <meta name="twitter:image" content="https://img.youtube.com/vi/Qh10fVoNrPw/maxresdefault.jpg">
-    <meta name="twitter:player" content="https://www.youtube.com/embed/Qh10fVoNrPw">
-    <meta name="twitter:player:width" content="1280">
-    <meta name="twitter:player:height" content="720">
-    
-    <title>Visionary QA | Official Testing Session</title>
     <style>
-        :root {
-            --primary: #6a11cb;
-            --secondary: #2575fc;
-            --accent: #4fc3f7;
-            --text: #f8f9fa;
-            --dark-bg: #121212;
-        }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, var(--dark-bg) 0%, #1e1e2e 100%);
-            color: var(--text);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding: 2rem 0;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-weight: 800;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-top: 0.5rem;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin-bottom: 2rem;
             background: #000;
         }
-        .video-wrapper iframe {
-            position: absolute;
+        .video-container {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
             border: none;
         }
-        .session-info {
-            background: rgba(30,30,40,0.7);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-        .info-item {
-            background: rgba(255,255,255,0.05);
-            padding: 1rem;
-            border-radius: 6px;
-        }
-        .info-item h3 {
-            color: var(--accent);
-            margin-top: 0;
-            font-size: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            opacity: 0.7;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Visionary Quality Assurance</h1>
-            <p class="subtitle">Bot Order by Kiwiplayzz_ • Official Testing Session</p>
-        </header>
-        
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/Qh10fVoNrPw?autoplay=1&modestbranding=1&rel=0&color=white" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-        
-        <div class="session-info">
-            <h2>Session Details</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <h3>Bot Order</h3>
-                    <p>Kiwiplayzz_</p>
-                </div>
-            </div>
-        </div>
-        
-        <footer>
-            <p> Hosted at vissionary.poorpotato.fun</p>
-        </footer>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Qh10fVoNrPw?autoplay=1" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
     </div>
 </body>
 </html>
