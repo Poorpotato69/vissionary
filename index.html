@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Bot Order kiwiplayzz_</title>
     
-    <!-- Discord Embed Tags -->
+    <!-- Primary Meta Tags -->
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Visionary QA Testing Session - Bot Order by kiwiplayzz_">
+    
+    <!-- Discord/OpenGraph Tags -->
     <meta property="og:type" content="video.other">
+    <meta property="og:site_name" content="Visionary QA">
     <meta property="og:title" content="Bot Order kiwiplayzz_">
+    <meta property="og:description" content="Official Visionary QA Testing Session">
     <meta property="og:url" content="https://vissionary.poorpotato.fun">
     <meta property="og:image" content="https://i.ytimg.com/vi/Qh10fVoNrPw/maxresdefault.jpg">
-    <meta property="og:description" content="Visionary QA Testing Session">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    
+    <!-- Video Specific Tags -->
     <meta property="og:video" content="https://www.youtube.com/embed/Qh10fVoNrPw">
     <meta property="og:video:url" content="https://www.youtube.com/embed/Qh10fVoNrPw">
     <meta property="og:video:secure_url" content="https://www.youtube.com/embed/Qh10fVoNrPw">
@@ -17,24 +26,42 @@
     <meta property="og:video:width" content="1280">
     <meta property="og:video:height" content="720">
     
+    <!-- Twitter Card Fallback -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:player" content="https://www.youtube.com/embed/Qh10fVoNrPw">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+    
     <style>
         body {
             margin: 0;
             padding: 0;
             background: #000;
+            overflow: hidden;
         }
-        iframe {
-            width: 100vw;
-            height: 100vh;
+        #player {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border: none;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://www.youtube.com/embed/Qh10fVoNrPw?autoplay=1" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    <iframe id="player"
+            src="https://www.youtube.com/embed/Qh10fVoNrPw?autoplay=1&enablejsapi=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
     </iframe>
+
+    <!-- Discord Crawler Workaround -->
+    <script>
+    if(navigator.userAgent.includes('Discordbot')) {
+        document.querySelector('meta[property="og:video"]').setAttribute('content', 'https://www.youtube.com/watch?v=Qh10fVoNrPw');
+    }
+    </script>
 </body>
 </html>
